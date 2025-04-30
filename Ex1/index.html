@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form novalidate>
+            <fieldset>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <span id="email-error"></span>
+            </fieldset>
+            <fieldset>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="PT" selected>Portugal</option>
+                    <option value="CA">Canada</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                </select>
+                <span id="country-error"></span>
+            </fieldset>
+            <fieldset>
+                <label for="postal-code">Postal Code (Format: xxxx-xxx):</label>
+                <input type="text" name="postal-code" id="postal-code" required>
+                <span id="postal-code-error"></span>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <span id="password-error"></span>
+            </fieldset>
+            <fieldset>
+                <label for="password-confirmation">Confirm Password:</label>
+                <input type="password" name="password-confirmation" id="password-confirmation" required>
+                <span id="password-confirmation-error"></span>
+            </fieldset>
+            <div class="btn-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
